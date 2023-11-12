@@ -1,5 +1,7 @@
 import { getSingleCourse } from "punn";
 
+export const revalidate = 0; // revalidate at most every hour
+
 async function Home({ params }) {
   const courseId = params.id;
   const courseInfo = await getSingleCourse(courseId);

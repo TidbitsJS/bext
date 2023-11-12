@@ -1,5 +1,7 @@
 import { getAllCourses } from "punn";
 
+export const revalidate = 0; // revalidate at most every hour
+
 async function Home() {
   const allCourses = await getAllCourses();
 
